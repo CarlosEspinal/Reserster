@@ -21,6 +21,17 @@
     <%= f.text_field :adress %>
   </div>
 
+  <%= form_for @restaurant, html: { multipart: true } do |f| %>
+  <p>
+    <label>Image</label>
+    <%= f.file_field :image %>
+  </p>
+  <% end %>
+
+
+
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
